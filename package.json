@@ -1,0 +1,48 @@
+{
+  "name": "enka-card",
+  "version": "1.0.0",
+  "description": "Generate beautiful character cards from Genshin Impact player data using Enka Network API",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "postinstall": "node scripts/download-assets.js",
+    "build": "node build.js",
+    "test": "node test/example.js"
+  },
+  "keywords": [
+    "genshin",
+    "genshin-impact",
+    "enka",
+    "enka-network",
+    "card",
+    "generator",
+    "canvas",
+    "character-card"
+  ],
+  "author": "rizurinn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rizurinn/enka-card.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rizurinn/enka-card/issues"
+  },
+  "homepage": "https://github.com/rizurinn/enka-card#readme",
+  "dependencies": {
+    "enka-network-api": "^5.0.14",
+    "@napi-rs/canvas": "^0.1.59"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist",
+    "scripts",
+    "attributes",
+    "README.md",
+    "LICENSE"
+  ]
+}
